@@ -1,5 +1,7 @@
 package com.nelsontr.shoppinglist.service;
 
+import com.nelsontr.shoppinglist.dto.ItemRequestDto;
+import com.nelsontr.shoppinglist.exception.ItemNotFoundException;
 import com.nelsontr.shoppinglist.model.Item;
 import com.nelsontr.shoppinglist.repository.ItemRepository;
 import lombok.RequiredArgsConstructor;
@@ -28,5 +30,15 @@ public class ItemService {
 
     public void deleteById(Long id) {
         itemRepository.deleteById(id);
+    }
+
+    public Item update(Long id, ItemRequestDto request) {
+        Item existing = itemRepository.findById(id)
+                .orElseThrow(() -> new ItemNotFoundException(id));
+        existing.setName(request.getName());
+        existing.setPrice(request.getPrice());
+        existing.setQuantity(request.getQuantity());
+        existing.setCategory(request.getCategory());
+        return itemRepository.save(existing);
     }
 }
