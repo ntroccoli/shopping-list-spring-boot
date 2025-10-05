@@ -1,0 +1,21 @@
+# Exclude local build outputs and VCS metadata from the Docker build context
+.git
+.gitignore
+
+# IDE/editor files
+.idea/
+.vscode/
+*.iml
+
+# Maven target directory
+ target/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Wrapper scripts and local tooling not needed in container build
+.mvn/
+mvnw
+mvnw.cmd
+

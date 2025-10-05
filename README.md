@@ -1,12 +1,12 @@
 # Simple Shopping List API
-A tiny Spring Boot (3.x) REST API to manage a shopping list. Uses an in-memory H2 database and OpenAPI/Swagger for docs.
+A Simple Spring Boot REST API to manage a shopping list. Uses an in-memory H2 database and OpenAPI/Swagger for docs.
 
-## Requirements
-- Java 21 (JDK 21)
+## Run with Maven Wrapper
+Requires Java 21 (JDK 21)
 
-## Run
 - Linux/macOS:
 ```
+chmod +x mvnw
 ./mvnw spring-boot:run
 ```
 
@@ -20,10 +20,17 @@ mvnw.cmd spring-boot:run
 .\mvnw.cmd spring-boot:run
 ```
 
+## Run with Docker (alternative)
+Requires Docker.
 
-App starts on http://localhost:8080
+```bash
+docker run --rm -p 8080:8080 "$(docker build -q .)"
+```
 
-Docs: http://localhost:8080/swagger-ui
+## Try it
+- API: http://localhost:8080/api/v1/items
+- Swagger UI: http://localhost:8080/swagger-ui
+- H2 Console: http://localhost:8080/h2-console
 
 ## API (base path: /api/v1/items)
 - GET all
