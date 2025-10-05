@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Organic Chicken Breast",
+    "price": 8.49,
+    "quantity": 2,
+    "category": "Meat"
+  },
+  {
+    "name": "Whole Wheat Pasta",
+    "price": 2.29,
+    "quantity": 3,
+    "category": "Pantry"
+  },
+  {
+    "name": "Avocado",
+    "price": 1.79,
+    "quantity": 4,
+    "category": "Produce"
+  },
+  {
+    "name": "Greek Yogurt",
+    "price": 4.99,
+    "quantity": 1,
+    "category": "Dairy"
+  },
+  {
+    "name": "Almond Milk",
+    "price": 3.49,
+    "quantity": 2,
+    "category": "Dairy"
+  },
+  {
+    "name": "Quinoa",
+    "price": 5.99,
+    "quantity": 1,
+    "category": "Grains"
+  },
+  {
+    "name": "Bananas",
+    "price": 0.29,
+    "quantity": 8,
+    "category": "Produce"
+  },
+  {
+    "name": "Tomato Sauce",
+    "price": 1.89,
+    "quantity": 2,
+    "category": "Pantry"
+  },
+  {
+    "name": "Salmon Fillet",
+    "price": 12.99,
+    "quantity": 1,
+    "category": "Seafood"
+  },
+  {
+    "name": "Spinach",
+    "price": 2.49,
+    "quantity": 2,
+    "category": "Produce"
+  }
+]
